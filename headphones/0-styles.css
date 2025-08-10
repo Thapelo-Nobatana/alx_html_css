@@ -1,0 +1,220 @@
+/* container styling */
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+body {
+    margin: 0%;
+}
+/* section styling */
+/* section {
+  padding: 20px 0 0;
+} */
+
+/* Hero styling */
+.hero {
+    background-image: url('/headphones/Archive/headphones_hero_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+   background-size: cover;
+    height: 800px;
+}
+.hero .header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero .header .container .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero .header .container .logo img {
+  width: 100%;
+  height: 25px;
+}
+
+.hero .header .container .logo p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px
+}
+
+.hero .header .container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+
+}
+.hero .header .container nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.hero .header .container nav ul li a:hover {
+ color: #FF6565;
+ text-decoration: underline;
+}
+
+/* what we do section styling */
+
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:  640px;
+  gap: 40px;
+}
+
+.what-we-do .what-heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.what-we-do .what-heading-wrapper h1 {
+   font-size: 32px;
+   color: #071629;
+}
+.what-we-do .what-heading-wrapper p {
+   font-size: 16px;
+   text-align: center;
+   color: #071629;
+   letter-spacing: 1.5;
+   line-height: 26px;
+}
+
+/* what-card styling */
+.what-we-do .what-card-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.what-we-do .what-card-wrapper .what-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.what-we-do .what-card-wrapper .what-card p {
+  font-size: 16px;
+  text-align: center;
+  line-height: normal;
+}
+
+#img {
+  width: 45px;
+}
+/*  result styling */
+
+.result {
+  background-image: url('/headphones/Archive/__MACOSX/background.png');
+   background-position: center;
+    background-repeat: no-repeat;
+   background-size: cover;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.result .result-heading-wrapper {
+  border: 2px solid black;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result .result-heading-wrapper h1 {
+     font-size: 32px;
+   color: #fff;
+}
+
+.result .result-heading-wrapper p {
+     font-size: 16px;
+   text-align: center;
+   color: #fff;
+   letter-spacing: 1.5;
+   line-height: 26px;
+}
+.result .result-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.result .result-wrapper .result-card {
+    background-image: url('/headphones/Archive/__MACOSX/Polygon\ Copy\ 2.png');
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* media queries */
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  p {
+    font-size: 11px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
